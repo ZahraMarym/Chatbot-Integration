@@ -14,7 +14,7 @@ function App() {
     setAns("Loading your answer...");
     try {
       const response = await axios({
-        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyD39H8_ZrBdSXVG7CiVQPVe8vqruYmZCzk",
+        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${your api}",
         method: "post",
         data: {
           contents: [{ parts: [{ text: q }] }],
